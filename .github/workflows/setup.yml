@@ -4,6 +4,10 @@ name: Setup CI
 
 on: [ push ]
 
+defaults:
+  run:
+    working-directory: web
+
 jobs:
   build-and-deploy:
 
@@ -27,4 +31,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: web/dist
+        FOLDER: dist
