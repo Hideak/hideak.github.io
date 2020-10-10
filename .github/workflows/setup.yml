@@ -1,6 +1,6 @@
 # This workflow will build and deploy the web application using Github Pages.
 
-name: Setup CI
+name: Setup Workflow
 
 on: [ push ]
 
