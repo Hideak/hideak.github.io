@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.c2f2e4a3b9fd6d70cd18ea8d1cd99cde.js"
+  "/precache-manifest.db51612f97befa13988fc29e451c6e68.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "web"});
+workbox.core.setCacheNameDetails({prefix: "hideak.github.io"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
