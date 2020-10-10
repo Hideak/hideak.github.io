@@ -2,7 +2,9 @@
 
 name: Setup Workflow
 
-on: [ push ]
+on:
+  push:
+    branches: [ main ]
 
 defaults:
   run:
