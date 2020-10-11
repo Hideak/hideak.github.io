@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fonts/Roboto-Light.88823c20.ttf"
   },
   {
-    "revision": "332f86fd7827dac7c3beef4b519516ec",
+    "revision": "a7b574b228d17107eacbacb614d88de1",
     "url": "/index.html"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-vendors.3206c0fa.js"
   },
   {
-    "revision": "da4327a214d4679e8d2eed635ea14094",
+    "revision": "79880191e8c449cc80654c86c96593c3",
     "url": "/manifest.json"
   },
   {
