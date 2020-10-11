@@ -1,2 +1,21 @@
-@import "fonts";
-@import "variables";
+@import "@/styles/fonts";
+@import "@/styles/variables";
+
+:root {
+  // Typography
+  font-family: "Roboto Light";
+  font-size: $rem-root-adjustment;
+}
+
+body {
+  // Typography
+  color: $font-dark;
+  font-size: 1.6rem;
+
+  // Spacing
+  margin: 0;
+  padding: 0;
+
+  // Colors
+  background-color: $app-background;
+}
