@@ -1,6 +1,6 @@
 ## Bem-vindo ao hideak.github.io
 
-Olá! Meu nome é Willian Hideak. Sou um desenvolvedor de software e estudante de graduação em Engenharia de Controle e Automação na Universiade Estadual de Campinas (Unicamp) Este é o repositório da [minha página pessoal (hideak.com)](https://hideak.com) para publicação de projetos e minhas informações de contato.
+Olá! Meu nome é Willian Hideak. Sou um desenvolvedor de software e estudante de graduação em Engenharia de Controle e Automação na Universiade Estadual de Campinas (Unicamp). Este é o repositório da [minha página pessoal (hideak.com)](https://hideak.com) para publicação de projetos e minhas informações de contato.
 
 Procurando por mais informações ou um currículo completo? Você pode visitar o meu [Currículo Lattes](http://lattes.cnpq.br/1071757822049421), ou então, minha página no [LinkedIn](https://www.linkedin.com/in/willian-hideak/).
 
