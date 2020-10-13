@@ -23,7 +23,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "@/styles/variables";
-@import "@/styles/mixins";
 
 button {
   // Flexbox
@@ -42,15 +41,6 @@ button {
   // Sizing and Spacing
   width: 21rem;
   height: 8rem;
-
-  // Media Queries
-  @include tablet-portrait-size {
-    display: none;
-  }
-
-  @include phone-size {
-    display: none;
-  }
 
   // Effects
   &:hover {
