@@ -1,5 +1,6 @@
 @import "@/styles/fonts";
 @import "@/styles/variables";
+@import "@/styles/mixins";
 
 :root {
   // Typography
@@ -18,4 +19,9 @@ body {
 
   // Colors
   background-color: $app-background;
+
+  a {
+    // Anchor Effects
+    text-decoration: none;
+  }
 }
