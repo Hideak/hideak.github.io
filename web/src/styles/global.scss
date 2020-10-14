@@ -24,4 +24,11 @@ body {
     // Anchor Effects
     text-decoration: none;
   }
+
+  h1 {
+    // Typography
+    font-family: "Architects Daughter";
+    font-size: 2.4rem;
+    color: $font-header;
+  }
 }

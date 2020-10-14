@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="app-header">
     <div class="container">
       <div class="headline">
         <div class="welcome-text">
@@ -35,7 +35,7 @@ export default defineComponent({
 @import "@/styles/variables";
 @import "@/styles/mixins";
 
-header {
+header.app-header {
   // Flexbox
   display: flex;
   justify-content: center;
@@ -61,7 +61,7 @@ header {
     }
 
     @include phone-size {
-      padding: 2.5rem 5rem;
+      padding: 2.5rem 2.5rem;
     }
 
     div.headline {
