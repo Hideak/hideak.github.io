@@ -4,39 +4,34 @@
       <nav>
         <CardButton
           :src="require('@/assets/icons/projects.svg')"
-          alt="Projetos"
-          description="Projetos"
+          :alt="$root.messages.cards.projects"
+          :description="$root.messages.cards.projects"
         />
         <CardButton
           :src="require('@/assets/icons/curriculum.svg')"
-          alt="Currículo"
-          description="Currículo"
+          :alt="$root.messages.cards.curriculum"
+          :description="$root.messages.cards.curriculum"
         />
         <CardButton
           :src="require('@/assets/icons/contact.svg')"
-          alt="Contrato"
-          description="Contato"
+          :alt="$root.messages.cards.contact"
+          :description="$root.messages.cards.contact"
         />
         <CardButton
           :src="require('@/assets/icons/links.svg')"
-          alt="Links"
-          description="Links"
+          :alt="$root.messages.cards.links"
+          :description="$root.messages.cards.links"
         />
       </nav>
+      <audio controls loop>
+        <source src="@/assets/audio/dire-dire-docks.mp3" type="audio/mpeg" />
+        {{ $root.messages.misc.unsupportedAudio }}
+      </audio>
       <section>
         <article>
-          <h1>Bem vindo ao hideak.com</h1>
-          <p>
-            Olá! Meu nome é Willian Hideak. Sou um desenvolvedor de software e
-            estudante de graduação em Engenharia de Controle e Automação na
-            Universiade Estadual de Campinas (Unicamp), Brasil. Esta é a minha
-            página oficial para publicação de projetos e minhas informações de
-            contato.
-          </p>
-          <p>
-            Procurando por mais informações ou um currículo completo? Você pode
-            visitar o meu Currículo Lattes, ou então, minha página no LinkedIn.
-          </p>
+          <h1>{{ $root.messages.content.welcome }}</h1>
+          <p>{{ $root.messages.content.paragraph1 }}</p>
+          <p>{{ $root.messages.content.paragraph2 }}</p>
         </article>
       </section>
     </div>
@@ -59,20 +54,16 @@ export default defineComponent({
 @import "@/styles/mixins";
 
 main {
-  // Flexbox
   display: flex;
   justify-content: center;
 
   div.container {
-    // Flexbox
     display: flex;
     flex-direction: column;
 
-    // Spacing and Sizing
     width: 110rem;
     padding: 5rem 10rem;
 
-    // Media Queries
     @include tablet-portrait-size {
       padding: 2.5rem 5rem;
     }
@@ -82,25 +73,24 @@ main {
     }
 
     nav {
-      // Flexbox
       display: flex;
       flex-wrap: wrap;
 
       div.card-button {
-        // Spacing
         margin: 0 3rem 3rem 0;
 
-        // Media Queries
         @include tablet-portrait-size {
-          // Spacing
           margin: 0 2.25rem 2.25rem 0;
         }
 
         @include phone-size {
-          // Spacing
           margin: 0 1.5rem 1.5rem 0;
         }
       }
+    }
+
+    audio {
+      width: 100%;
     }
   }
 }

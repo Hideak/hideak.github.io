@@ -36,26 +36,20 @@ export default defineComponent({
 @import "@/styles/mixins";
 
 header.app-header {
-  // Flexbox
   display: flex;
   justify-content: center;
 
-  // Background
   background: linear-gradient(180deg, $header-dark 0%, $header-light 100%);
 
-  // Typography
-  font-family: "Architects Daughter";
+  font-family: $font-family-special;
 
   div.container {
-    // Flexbox
     display: flex;
     flex-direction: column;
 
-    // Spacing and Sizing
     width: 110rem;
     padding: 2.5rem 10rem;
 
-    // Media Queries
     @include tablet-portrait-size {
       padding: 2.5rem 5rem;
     }
@@ -65,29 +59,24 @@ header.app-header {
     }
 
     div.headline {
-      // Flexbox
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
 
       div.welcome-text {
         div.title {
-          // Typography
-          color: $font-white;
+          color: $font-color-white;
           font-size: 4.8rem;
 
-          // Media Queries
           @include phone-size {
             font-size: 4rem;
           }
         }
 
         div.subtitle {
-          // Typography
-          color: $font-light-blue;
+          color: $font-color-light-blue;
           font-size: 2.4rem;
 
-          // Media Queries
           @include phone-size {
             font-size: 2rem;
           }
@@ -95,7 +84,6 @@ header.app-header {
       }
 
       div.follow-me {
-        // Media Queries
         @include tablet-portrait-size {
           display: none;
         }
@@ -107,13 +95,10 @@ header.app-header {
     }
 
     div.mini-follow-me {
-      // Default Display
       display: none;
 
-      // Spacing
       margin-top: 1.6rem;
 
-      // Media Queries
       @include tablet-portrait-size {
         display: block;
       }

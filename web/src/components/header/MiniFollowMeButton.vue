@@ -19,34 +19,28 @@ export default defineComponent({
 @import "@/styles/variables";
 
 button {
-  // Background
   background-color: $button-frost;
 
-  // Borders and Shadows
   border: 0;
   border-radius: 0.3rem;
   outline: none;
 
-  // Spacing
   padding: 0.3rem 0.6rem;
 
-  // Typography
-  font-family: "Architects Daughter";
-  color: $font-white;
+  font-family: $font-family-special;
+  color: $font-color-white;
 
-  // Effects
   &:hover {
-    // Cursor
     cursor: pointer;
-
-    // Background
     background-color: $button-frost-hover;
   }
 
-  // Effects
   &:active {
-    // Background
     background-color: $button-frost-active;
   }
+}
+
+a {
+  text-decoration: none;
 }
 </style>

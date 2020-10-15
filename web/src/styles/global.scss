@@ -3,32 +3,22 @@
 @import "@/styles/mixins";
 
 :root {
-  // Typography
-  font-family: "Roboto Light";
+  font-family: $font-family-basic;
   font-size: $rem-root-adjustment;
 }
 
 body {
-  // Typography
-  color: $font-dark;
-  font-size: 1.6rem;
+  color: $font-color-dark;
+  font-size: $font-size-basic;
 
-  // Spacing
   margin: 0;
   padding: 0;
 
-  // Colors
   background-color: $app-background;
 
-  a {
-    // Anchor Effects
-    text-decoration: none;
-  }
-
   h1 {
-    // Typography
-    font-family: "Architects Daughter";
-    font-size: 2.4rem;
-    color: $font-header;
+    font-family: $font-family-special;
+    font-size: $font-size-h1;
+    color: $font-color-header;
   }
 }
