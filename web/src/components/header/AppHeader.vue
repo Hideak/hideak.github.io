@@ -3,8 +3,8 @@
     <div class="container">
       <div class="headline">
         <div class="welcome-text">
-          <div class="title">{{ $root.messages.header.title }}</div>
-          <div class="subtitle">{{ $root.messages.header.subtitle }}</div>
+          <div class="title">{{ $root.msg.header.title }}</div>
+          <div class="subtitle">{{ $root.msg.header.subtitle }}</div>
         </div>
         <div class="follow-me">
           <FollowMeButton />

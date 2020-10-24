@@ -6,9 +6,9 @@
       </div>
       <div class="content">
         <div class="title">
-          {{ $root.messages.buttons.followMe.followMeOn }}
+          {{ $root.msg.buttons.followMe.followMeOn }}
         </div>
-        <div class="subtitle">{{ $root.messages.buttons.followMe.github }}</div>
+        <div class="subtitle">{{ $root.msg.buttons.followMe.github }}</div>
       </div>
     </button>
   </a>

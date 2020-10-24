@@ -2,7 +2,7 @@
   <a href="https://github.com/hideak/" target="_blank">
     <button>
       {{
-        `${$root.messages.buttons.followMe.followMeOn} ${$root.messages.buttons.followMe.github}`
+        `${$root.msg.buttons.followMe.followMeOn} ${$root.msg.buttons.followMe.github}`
       }}
     </button>
   </a>

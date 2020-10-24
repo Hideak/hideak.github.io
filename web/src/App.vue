@@ -12,7 +12,7 @@ export default defineComponent({
   name: "App",
   data() {
     return {
-      messages: appMessages
+      msg: appMessages
     };
   },
   components: {

@@ -4,34 +4,34 @@
       <nav>
         <CardButton
           :src="require('@/assets/icons/projects.svg')"
-          :alt="$root.messages.cards.projects"
-          :description="$root.messages.cards.projects"
+          :alt="$root.msg.cards.projects"
+          :description="$root.msg.cards.projects"
         />
         <CardButton
           :src="require('@/assets/icons/curriculum.svg')"
-          :alt="$root.messages.cards.curriculum"
-          :description="$root.messages.cards.curriculum"
+          :alt="$root.msg.cards.curriculum"
+          :description="$root.msg.cards.curriculum"
         />
         <CardButton
           :src="require('@/assets/icons/contact.svg')"
-          :alt="$root.messages.cards.contact"
-          :description="$root.messages.cards.contact"
+          :alt="$root.msg.cards.contact"
+          :description="$root.msg.cards.contact"
         />
         <CardButton
           :src="require('@/assets/icons/links.svg')"
-          :alt="$root.messages.cards.links"
-          :description="$root.messages.cards.links"
+          :alt="$root.msg.cards.links"
+          :description="$root.msg.cards.links"
         />
       </nav>
       <audio controls loop>
         <source src="@/assets/audio/dire-dire-docks.mp3" type="audio/mpeg" />
-        {{ $root.messages.misc.unsupportedAudio }}
+        {{ $root.msg.misc.unsupportedAudio }}
       </audio>
       <section>
         <article>
-          <h1>{{ $root.messages.content.welcome }}</h1>
-          <p>{{ $root.messages.content.paragraph1 }}</p>
-          <p>{{ $root.messages.content.paragraph2 }}</p>
+          <h1>{{ $root.msg.content.welcome }}</h1>
+          <p>{{ $root.msg.content.paragraph1 }}</p>
+          <p>{{ $root.msg.content.paragraph2 }}</p>
         </article>
       </section>
     </div>
