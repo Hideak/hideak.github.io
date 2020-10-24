@@ -91,6 +91,7 @@ main {
 
     audio {
       width: 100%;
+      outline: none;
     }
   }
 }
