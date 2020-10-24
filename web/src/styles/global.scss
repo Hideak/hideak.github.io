@@ -21,4 +21,31 @@ body {
     font-size: $font-size-h1;
     color: $font-color-header;
   }
+
+  h2 {
+    font-family: $font-family-special;
+    font-size: $font-size-h2;
+    color: $font-color-header;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      width: 110rem;
+      padding: 5rem 10rem;
+
+      @include tablet-portrait-size {
+        padding: 2.5rem 5rem;
+      }
+
+      @include phone-size {
+        padding: 2.5rem 2.5rem;
+      }
+    }
+  }
 }
