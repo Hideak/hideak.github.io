@@ -17,6 +17,16 @@ body {
   background-color: $app-background;
 
   a,
+  a:active,
+  a:visited {
+    color: $font-color-link;
+  }
+
+  a:hover {
+    color: $font-color-link-hover;
+  }
+
+  a,
   a:visited,
   a:hover,
   a:active {
