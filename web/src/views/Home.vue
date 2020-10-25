@@ -1,12 +1,14 @@
 <template>
-  <main class="home">
+  <div class="content">
     <div class="container">
       <nav>
-        <CardButton
-          :src="require('@/assets/icons/projects.svg')"
-          :alt="$root.msg.cards.projects"
-          :description="$root.msg.cards.projects"
-        />
+        <router-link class="no-decoration" :to="{ name: 'ProjectsPage' }">
+          <CardButton
+            :src="require('@/assets/icons/projects.svg')"
+            :alt="$root.msg.cards.projects"
+            :description="$root.msg.cards.projects"
+          />
+        </router-link>
         <CardButton
           :src="require('@/assets/icons/curriculum.svg')"
           :alt="$root.msg.cards.curriculum"
@@ -27,25 +29,23 @@
         <source src="@/assets/audio/dire-dire-docks.mp3" type="audio/mpeg" />
         {{ $root.msg.misc.unsupportedAudio }}
       </audio>
-      <section>
-        <article>
-          <h1>{{ $root.msg.content.welcome }}</h1>
-          <p>{{ $root.msg.content.paragraph1 }}</p>
-          <p>{{ $root.msg.content.paragraph2 }}</p>
-        </article>
-      </section>
+      <article>
+        <component :is="'HomePage'" />
+      </article>
     </div>
-  </main>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import CardButton from "@/components/cards/CardButton.vue";
+import HomePage from "@/pages/HomePage.vue";
 
 export default defineComponent({
   name: "Home",
   components: {
-    CardButton
+    CardButton,
+    HomePage
   }
 });
 </script>
@@ -53,46 +53,25 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "@/styles/mixins";
 
-main {
+nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
-  div.container {
-    display: flex;
-    flex-direction: column;
-
-    width: 110rem;
-    padding: 5rem 10rem;
+  div.card-button {
+    margin: 0 3rem 3rem 0;
 
     @include tablet-portrait-size {
-      padding: 2.5rem 5rem;
+      margin: 0 2.25rem 2.25rem 0;
     }
 
     @include phone-size {
-      padding: 2.5rem 2.5rem;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-
-      div.card-button {
-        margin: 0 3rem 3rem 0;
-
-        @include tablet-portrait-size {
-          margin: 0 2.25rem 2.25rem 0;
-        }
-
-        @include phone-size {
-          margin: 0 1.5rem 1.5rem 0;
-        }
-      }
-    }
-
-    audio {
-      width: 100%;
-      outline: none;
+      margin: 0 1.5rem 1.5rem 0;
     }
   }
+}
+
+audio {
+  width: 100%;
+  outline: none;
 }
 </style>
