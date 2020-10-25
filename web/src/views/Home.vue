@@ -2,34 +2,30 @@
   <div class="content">
     <div class="container">
       <nav>
-        <router-link class="no-decoration" :to="{ name: 'ProjectsPage' }">
-          <CardButton
-            :src="require('@/assets/icons/projects.svg')"
-            :alt="$root.msg.cards.projects"
-            :description="$root.msg.cards.projects"
-          />
-        </router-link>
-        <router-link class="no-decoration" :to="{ name: 'CurriculumPage' }">
-          <CardButton
-            :src="require('@/assets/icons/curriculum.svg')"
-            :alt="$root.msg.cards.curriculum"
-            :description="$root.msg.cards.curriculum"
-          />
-        </router-link>
-        <router-link class="no-decoration" :to="{ name: 'ContactPage' }">
-          <CardButton
-            :src="require('@/assets/icons/contact.svg')"
-            :alt="$root.msg.cards.contact"
-            :description="$root.msg.cards.contact"
-          />
-        </router-link>
-        <router-link class="no-decoration" :to="{ name: 'LinksPage' }">
-          <CardButton
-            :src="require('@/assets/icons/links.svg')"
-            :alt="$root.msg.cards.links"
-            :description="$root.msg.cards.links"
-          />
-        </router-link>
+        <CardButton
+          :src="require('@/assets/icons/projects.svg')"
+          :alt="$root.msg.cards.projects"
+          :description="$root.msg.cards.projects"
+          @click="navigateTo({ name: 'ProjectsPage' })"
+        />
+        <CardButton
+          :src="require('@/assets/icons/curriculum.svg')"
+          :alt="$root.msg.cards.curriculum"
+          :description="$root.msg.cards.curriculum"
+          @click="navigateTo({ name: 'CurriculumPage' })"
+        />
+        <CardButton
+          :src="require('@/assets/icons/contact.svg')"
+          :alt="$root.msg.cards.contact"
+          :description="$root.msg.cards.contact"
+          @click="navigateTo({ name: 'ContactPage' })"
+        />
+        <CardButton
+          :src="require('@/assets/icons/links.svg')"
+          :alt="$root.msg.cards.links"
+          :description="$root.msg.cards.links"
+          @click="navigateTo({ name: 'LinksPage' })"
+        />
       </nav>
       <audio controls loop>
         <source src="@/assets/audio/dire-dire-docks.mp3" type="audio/mpeg" />
@@ -44,6 +40,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { RouteLocation } from "vue-router";
 import CardButton from "@/components/cards/CardButton.vue";
 import HomePage from "@/pages/HomePage.vue";
 
@@ -52,6 +49,11 @@ export default defineComponent({
   components: {
     CardButton,
     HomePage
+  },
+  methods: {
+    navigateTo(path: RouteLocation) {
+      this.$router.push(path);
+    }
   }
 });
 </script>

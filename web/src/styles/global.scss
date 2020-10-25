@@ -26,16 +26,6 @@ body {
     color: $font-color-link-hover;
   }
 
-  a,
-  a:visited,
-  a:hover,
-  a:active {
-    &.no-decoration {
-      color: inherit;
-      text-decoration: none;
-    }
-  }
-
   h1 {
     font-family: $font-family-special;
     font-size: $font-size-h1;
