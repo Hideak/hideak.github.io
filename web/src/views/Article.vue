@@ -8,14 +8,18 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HomePage from "@/pages/HomePage.vue";
 import ProjectsPage from "@/pages/ProjectsPage.vue";
+import CurriculumPage from "@/pages/CurriculumPage.vue";
+import ContactPage from "@/pages/ContactPage.vue";
+import LinksPage from "@/pages/LinksPage.vue";
 
 export default defineComponent({
   name: "Article",
   components: {
     ProjectsPage,
-    HomePage
+    CurriculumPage,
+    ContactPage,
+    LinksPage
   },
   props: {
     article: String

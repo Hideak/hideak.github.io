@@ -9,21 +9,27 @@
             :description="$root.msg.cards.projects"
           />
         </router-link>
-        <CardButton
-          :src="require('@/assets/icons/curriculum.svg')"
-          :alt="$root.msg.cards.curriculum"
-          :description="$root.msg.cards.curriculum"
-        />
-        <CardButton
-          :src="require('@/assets/icons/contact.svg')"
-          :alt="$root.msg.cards.contact"
-          :description="$root.msg.cards.contact"
-        />
-        <CardButton
-          :src="require('@/assets/icons/links.svg')"
-          :alt="$root.msg.cards.links"
-          :description="$root.msg.cards.links"
-        />
+        <router-link class="no-decoration" :to="{ name: 'CurriculumPage' }">
+          <CardButton
+            :src="require('@/assets/icons/curriculum.svg')"
+            :alt="$root.msg.cards.curriculum"
+            :description="$root.msg.cards.curriculum"
+          />
+        </router-link>
+        <router-link class="no-decoration" :to="{ name: 'ContactPage' }">
+          <CardButton
+            :src="require('@/assets/icons/contact.svg')"
+            :alt="$root.msg.cards.contact"
+            :description="$root.msg.cards.contact"
+          />
+        </router-link>
+        <router-link class="no-decoration" :to="{ name: 'LinksPage' }">
+          <CardButton
+            :src="require('@/assets/icons/links.svg')"
+            :alt="$root.msg.cards.links"
+            :description="$root.msg.cards.links"
+          />
+        </router-link>
       </nav>
       <audio controls loop>
         <source src="@/assets/audio/dire-dire-docks.mp3" type="audio/mpeg" />

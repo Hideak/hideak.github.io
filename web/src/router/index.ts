@@ -13,6 +13,24 @@ const routes: Array<RouteRecordRaw> = [
     name: "ProjectsPage",
     props: { article: "ProjectsPage" },
     component: Article
+  },
+  {
+    path: "/curriculum",
+    name: "CurriculumPage",
+    props: { article: "CurriculumPage" },
+    component: Article
+  },
+  {
+    path: "/contact",
+    name: "ContactPage",
+    props: { article: "ContactPage" },
+    component: Article
+  },
+  {
+    path: "/links",
+    name: "LinksPage",
+    props: { article: "LinksPage" },
+    component: Article
   }
 ];
 
