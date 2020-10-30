@@ -30,12 +30,30 @@ body {
     font-family: $font-family-special;
     font-size: $font-size-h1;
     color: $font-color-header;
+
+    &::before {
+      content: "";
+      background-image: url("./assets/icons/arrow-circle-right-solid.svg");
+      display: inline-block;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 1rem;
+    }
   }
 
   h2 {
     font-family: $font-family-special;
     font-size: $font-size-h2;
     color: $font-color-header;
+
+    &::before {
+      content: "";
+      background-image: url("./assets/icons/arrow-right-solid.svg");
+      display: inline-block;
+      width: 1.4rem;
+      height: 1.6rem;
+      margin-right: 1rem;
+    }
   }
 
   .content {
