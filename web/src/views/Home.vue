@@ -51,7 +51,7 @@ export default defineComponent({
     HomePage
   },
   methods: {
-    navigateTo(path: RouteLocation) {
+    navigateTo(path: RouteLocation): void {
       this.$router.push(path);
     }
   }

@@ -2,7 +2,7 @@
   <header class="app-header">
     <div class="container">
       <div class="headline">
-        <div class="welcome-text">
+        <div class="welcome-text" @click="navigateTo({ name: 'Home' })">
           <div class="title">{{ $root.msg.header.title }}</div>
           <div class="subtitle">{{ $root.msg.header.subtitle }}</div>
         </div>
@@ -19,6 +19,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { RouteLocation } from "vue-router";
 import FollowMeButton from "@/components/header/FollowMeButton.vue";
 import MiniFollowMeButton from "@/components/header/MiniFollowMeButton.vue";
 
@@ -27,6 +28,11 @@ export default defineComponent({
   components: {
     FollowMeButton,
     MiniFollowMeButton
+  },
+  methods: {
+    navigateTo(path: RouteLocation): void {
+      this.$router.push(path);
+    }
   }
 });
 </script>
@@ -91,6 +97,10 @@ header.app-header {
         @include phone-size {
           display: none;
         }
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
 
