@@ -1,8 +1,11 @@
 import { createApp } from "vue";
+import { registerPages } from "@/plugins/register-pages";
 import App from "./App.vue";
-import "./registerServiceWorker";
 import router from "./router";
+import "./registerServiceWorker";
 
-createApp(App)
-  .use(router)
-  .mount("#app");
+const app = createApp(App).use(router);
+
+registerPages(app);
+
+app.mount("#app");
