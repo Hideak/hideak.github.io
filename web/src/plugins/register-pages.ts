@@ -1,10 +1,10 @@
-import upperFirst from "lodash/upperFirst";
-import camelCase from "lodash/camelCase";
-import { App } from "vue";
+import upperFirst from 'lodash/upperFirst';
+import camelCase from 'lodash/camelCase';
+import { App } from 'vue';
 
 const requireComponent = require.context(
   // The relative path of the components folder
-  "../pages",
+  '../pages',
   // Whether or not to look in subfolders
   true,
   // The regular expression used to match base component filenames
@@ -21,9 +21,9 @@ export const registerPages = (app: App) =>
       camelCase(
         // Gets the file name regardless of folder depth
         fileName
-          .split("/")
+          .split('/')
           .pop()
-          ?.replace(/\.\w+$/, "")
+          ?.replace(/\.\w+$/, '')
       )
     );
     // Register component globally

@@ -18,13 +18,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { RouteLocation } from "vue-router";
-import FollowMeButton from "@/components/header/FollowMeButton.vue";
-import MiniFollowMeButton from "@/components/header/MiniFollowMeButton.vue";
+import { defineComponent } from 'vue';
+import { RouteLocation } from 'vue-router';
+import FollowMeButton from '@/components/header/FollowMeButton.vue';
+import MiniFollowMeButton from '@/components/header/MiniFollowMeButton.vue';
 
 export default defineComponent({
-  name: "AppHeader",
+  name: 'AppHeader',
   components: {
     FollowMeButton,
     MiniFollowMeButton
@@ -38,8 +38,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables";
-@import "@/styles/mixins";
+@import '@/styles/variables';
+@import '@/styles/mixins';
 
 header.app-header {
   display: flex;

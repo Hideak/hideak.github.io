@@ -39,13 +39,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { RouteLocation } from "vue-router";
-import CardButton from "@/components/cards/CardButton.vue";
-import HomePage from "@/pages/HomePage.vue";
+import { defineComponent } from 'vue';
+import { RouteLocation } from 'vue-router';
+import CardButton from '@/components/cards/CardButton.vue';
+import HomePage from '@/pages/HomePage.vue';
 
 export default defineComponent({
-  name: "Home",
+  name: 'Home',
   components: {
     CardButton,
     HomePage
@@ -59,7 +59,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/mixins";
+@import '@/styles/mixins';
 
 nav {
   display: flex;

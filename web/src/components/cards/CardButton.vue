@@ -8,10 +8,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "CardButton",
+  name: 'CardButton',
   props: {
     src: String,
     alt: String,
@@ -21,8 +21,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables";
-@import "@/styles/mixins";
+@import '@/styles/variables';
+@import '@/styles/mixins';
 
 div.card-button {
   display: flex;
@@ -30,7 +30,7 @@ div.card-button {
   justify-content: flex-end;
   align-items: center;
 
-  font-family: "Architects Daughter";
+  font-family: 'Architects Daughter';
   font-size: 2rem;
   margin: 2rem 0;
 

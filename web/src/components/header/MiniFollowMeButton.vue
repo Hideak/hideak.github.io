@@ -1,22 +1,20 @@
 <template>
   <a href="https://github.com/hideak/" target="_blank">
     <button>
-      {{
-        `${$root.msg.buttons.followMe.followMeOn} ${$root.msg.buttons.followMe.github}`
-      }}
+      {{ `${$root.msg.buttons.followMe.followMeOn} ${$root.msg.buttons.followMe.github}` }}
     </button>
   </a>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 export default defineComponent({
-  name: "MiniFollowMeButton"
+  name: 'MiniFollowMeButton'
 });
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/variables";
+@import '@/styles/variables';
 
 button {
   background-color: $button-frost;
