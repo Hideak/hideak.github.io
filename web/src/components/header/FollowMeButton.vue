@@ -1,5 +1,5 @@
 <template>
-  <a href="https://github.com/hideak/" target="_blank">
+  <a href="https://github.com/hideak/" target="_blank" rel="noreferrer">
     <button>
       <div class="icon">
         <img src="@/assets/icons/github-white.svg" alt="Github Logo" />

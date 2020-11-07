@@ -1,5 +1,5 @@
 <template>
-  <a href="https://github.com/hideak/" target="_blank">
+  <a href="https://github.com/hideak/" target="_blank" rel="noreferrer">
     <button>
       {{ `${$root.msg.buttons.followMe.followMeOn} ${$root.msg.buttons.followMe.github}` }}
     </button>
