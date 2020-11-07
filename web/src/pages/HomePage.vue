@@ -17,20 +17,16 @@
 
     <h1>Tecnologias e Ferramentas</h1>
 
-    <h2>Front-end</h2>
+    <h2>Web Development</h2>
     <div>
       <img src="@/assets/stack/html-5.png" alt="HTML 5" />
       <img src="@/assets/stack/css-3.png" alt="CSS 3" />
       <img src="@/assets/stack/javascript.png" alt="Javascript" />
       <img src="@/assets/stack/typescript.png" alt="Typescript" />
+      <img src="@/assets/stack/java.png" alt="Java" />
       <img src="@/assets/stack/angular.png" alt="Angular" />
       <img src="@/assets/stack/vue-js.png" alt="Vue JS" />
       <img src="@/assets/stack/webpack.png" alt="Webpack" />
-    </div>
-
-    <h2>Back-end</h2>
-    <div>
-      <img src="@/assets/stack/java.png" alt="Java" />
     </div>
 
     <h2>Desktop</h2>
