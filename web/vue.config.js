@@ -11,7 +11,7 @@ module.exports = {
       background_color: '#e7eaed'
     },
     workboxOptions: {
-      exclude: [/_config\.yml$/]
+      exclude: [/_config\.yml$/, /\.map$/]
     }
   }
 };
