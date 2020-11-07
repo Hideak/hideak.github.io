@@ -10,8 +10,9 @@
     <h1>Informações de contato</h1>
     <p>
       Procurando por mais informações ou um currículo completo? Você pode visitar o meu
-      <a href="http://lattes.cnpq.br/1071757822049421">Currículo Lattes</a>, ou então, minha página
-      no <a href="https://linkedin.com/in/whideak">LinkedIn</a>.
+      <a rel="noreferrer" href="http://lattes.cnpq.br/1071757822049421">Currículo Lattes</a>, ou
+      então, minha página no
+      <a rel="noreferrer" href="https://linkedin.com/in/whideak">LinkedIn</a>.
     </p>
 
     <h1>Tecnologias e Ferramentas</h1>
