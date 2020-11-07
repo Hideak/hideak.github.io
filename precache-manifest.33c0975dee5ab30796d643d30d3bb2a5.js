@@ -8,10 +8,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/app.eee4d8a6.css"
   },
   {
-    "revision": "12195f5f8367650e50e9",
-    "url": "/css/app.eee4d8a6.css.map"
-  },
-  {
     "revision": "10911218d49f09896f8d257d366a532d",
     "url": "/favicon.ico"
   },
@@ -188,16 +184,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/app.5022efcf.js"
   },
   {
-    "revision": "12195f5f8367650e50e9",
-    "url": "/js/app.5022efcf.js.map"
-  },
-  {
     "revision": "287f3ee112060d1871ee",
     "url": "/js/chunk-vendors.a3f6f1c3.js"
-  },
-  {
-    "revision": "287f3ee112060d1871ee",
-    "url": "/js/chunk-vendors.a3f6f1c3.js.map"
   },
   {
     "revision": "79880191e8c449cc80654c86c96593c3",
