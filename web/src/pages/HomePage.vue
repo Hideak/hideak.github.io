@@ -19,36 +19,36 @@
 
     <h2>Web Development</h2>
     <div>
-      <img src="@/assets/stack/html-5.png" alt="HTML 5" />
-      <img src="@/assets/stack/css-3.png" alt="CSS 3" />
-      <img src="@/assets/stack/javascript.png" alt="Javascript" />
-      <img src="@/assets/stack/typescript.png" alt="Typescript" />
-      <img src="@/assets/stack/java.png" alt="Java" />
-      <img src="@/assets/stack/angular.png" alt="Angular" />
-      <img src="@/assets/stack/vue-js.png" alt="Vue JS" />
-      <img src="@/assets/stack/webpack.png" alt="Webpack" />
+      <img src="@/assets/stack/html-5.webp" alt="HTML 5" />
+      <img src="@/assets/stack/css-3.webp" alt="CSS 3" />
+      <img src="@/assets/stack/javascript.webp" alt="Javascript" />
+      <img src="@/assets/stack/typescript.webp" alt="Typescript" />
+      <img src="@/assets/stack/java.webp" alt="Java" />
+      <img src="@/assets/stack/angular.webp" alt="Angular" />
+      <img src="@/assets/stack/vue-js.webp" alt="Vue JS" />
+      <img src="@/assets/stack/webpack.webp" alt="Webpack" />
     </div>
 
     <h2>Desktop</h2>
     <div>
-      <img src="@/assets/stack/visual-studio.png" alt="Visual Studio" />
-      <img src="@/assets/stack/c-sharp.png" alt="C#" />
-      <img src="@/assets/stack/c-plus-plus.png" alt="C++" />
+      <img src="@/assets/stack/visual-studio.webp" alt="Visual Studio" />
+      <img src="@/assets/stack/c-sharp.webp" alt="C#" />
+      <img src="@/assets/stack/c-plus-plus.webp" alt="C++" />
     </div>
 
     <h2>Data Science</h2>
     <div>
-      <img src="@/assets/stack/python.png" alt="Python" />
-      <img src="@/assets/stack/jupyter.png" alt="Jupyter" />
+      <img src="@/assets/stack/python.webp" alt="Python" />
+      <img src="@/assets/stack/jupyter.webp" alt="Jupyter" />
     </div>
 
     <h2>Multidisciplinar</h2>
     <div>
-      <img src="@/assets/stack/git.png" alt="Git" />
-      <img src="@/assets/stack/github-octocat.png" alt="Github Octocat" />
-      <img src="@/assets/stack/docker.png" alt="Docker" />
-      <img src="@/assets/stack/google-cloud.png" alt="Google Cloud" />
-      <img src="@/assets/stack/vs-code.png" alt="Visual Studio Code" />
+      <img src="@/assets/stack/git.webp" alt="Git" />
+      <img src="@/assets/stack/github-octocat.webp" alt="Github Octocat" />
+      <img src="@/assets/stack/docker.webp" alt="Docker" />
+      <img src="@/assets/stack/google-cloud.webp" alt="Google Cloud" />
+      <img src="@/assets/stack/vs-code.webp" alt="Visual Studio Code" />
     </div>
   </div>
 </template>
