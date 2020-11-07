@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.33be953e807afc05c99a75a8c7a7e008.js"
+  "/precache-manifest.d7e411d83dba6dfc0576f61b703e9c2e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "hideak.github.io"});
