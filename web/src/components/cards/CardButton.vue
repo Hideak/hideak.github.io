@@ -30,7 +30,7 @@ div.card-button {
   justify-content: flex-end;
   align-items: center;
 
-  font-family: 'Architects Daughter';
+  font-family: $font-family-special;
   font-size: 2rem;
   margin: 2rem 0;
 
