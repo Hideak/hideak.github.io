@@ -10,8 +10,11 @@
           <FollowMeButton />
         </div>
       </div>
-      <div class="mini-follow-me">
-        <MiniFollowMeButton />
+      <div class="subline">
+        <div class="mini-follow-me">
+          <MiniFollowMeButton />
+        </div>
+        <MusicPlayer :id="app - music" :src="require('@/assets/audio/dire-dire-docks.mp3')" />
       </div>
     </div>
   </header>
@@ -22,12 +25,14 @@ import { defineComponent } from 'vue';
 import { RouteLocation } from 'vue-router';
 import FollowMeButton from '@/components/header/FollowMeButton.vue';
 import MiniFollowMeButton from '@/components/header/MiniFollowMeButton.vue';
+import MusicPlayer from '@/components/media/MusicPlayer.vue';
 
 export default defineComponent({
   name: 'AppHeader',
   components: {
     FollowMeButton,
-    MiniFollowMeButton
+    MiniFollowMeButton,
+    MusicPlayer
   },
   methods: {
     navigateTo(path: RouteLocation): void {
@@ -82,6 +87,7 @@ header.app-header {
         div.subtitle {
           color: $font-color-light-blue;
           font-size: 2.4rem;
+          margin-right: 1rem;
 
           @include phone-size {
             font-size: 2rem;
@@ -104,17 +110,33 @@ header.app-header {
       }
     }
 
-    div.mini-follow-me {
-      display: none;
-
+    div.subline {
+      display: flex;
+      align-items: flex-end;
       margin-top: 1.6rem;
 
-      @include tablet-portrait-size {
-        display: block;
+      div.mini-follow-me {
+        display: none;
+
+        @include tablet-portrait-size {
+          display: block;
+        }
+
+        @include phone-size {
+          display: block;
+        }
       }
 
-      @include phone-size {
-        display: block;
+      div.music-player {
+        @include tablet-portrait-size {
+          margin-top: 0;
+          margin-left: 2rem;
+        }
+
+        @include phone-size {
+          margin-top: 0;
+          margin-left: 2rem;
+        }
       }
     }
   }

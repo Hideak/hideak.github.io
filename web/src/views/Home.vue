@@ -27,10 +27,6 @@
           @click="navigateTo({ name: 'LinksPage' })"
         />
       </nav>
-      <audio controls loop>
-        <source src="@/assets/audio/dire-dire-docks.mp3" type="audio/mpeg" />
-        {{ $root.msg.misc.unsupportedAudio }}
-      </audio>
       <article>
         <component :is="'HomePage'" />
       </article>
@@ -76,10 +72,5 @@ nav {
       margin: 0 1.5rem 1.5rem 0;
     }
   }
-}
-
-audio {
-  width: 100%;
-  outline: none;
 }
 </style>
