@@ -60,17 +60,15 @@ export default defineComponent({
 nav {
   display: flex;
   flex-wrap: wrap;
+  gap: 2.25rem;
+  margin-bottom: 1rem;
 
-  div.card-button {
-    margin: 0 3rem 3rem 0;
+  @include tablet-portrait-size {
+    gap: 1.5rem;
+  }
 
-    @include tablet-portrait-size {
-      margin: 0 2.25rem 2.25rem 0;
-    }
-
-    @include phone-size {
-      margin: 0 1.5rem 1.5rem 0;
-    }
+  @include phone-size {
+    gap: 1rem;
   }
 }
 </style>

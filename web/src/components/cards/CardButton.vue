@@ -32,7 +32,6 @@ div.card-button {
 
   font-family: $font-family-special;
   font-size: 2rem;
-  margin: 2rem 0;
 
   background-color: $card-background;
 
@@ -51,7 +50,7 @@ div.card-button {
 
   @include phone-size {
     width: 6.875rem;
-    height: 11rem;
+    height: 10rem;
 
     font-size: 1.25rem;
   }
